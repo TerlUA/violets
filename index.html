@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    }
+    .content {
+      min-width: 500px;
+      margin: 0 auto;
+      padding: 15px 60px;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Ephesis", cursive;
+      font-size: 55px;
+      background: #58bc22;
+      font-weight: 100;
+      margin: 10px auto;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+      color: #42b901;
+      font-size: 48px;
+      font-family: "Raleway", sans-serif;
+    }
+    hr {
+      color: #42b901;
+      height: 2px;
+      border-width: 1px;
+      border-style: solid;
+      background-color: #42b901;
+    }
+    img {
+      display: block;
+      border: 5px solid #a3de83;
+      border-radius: 5px;
+      margin: auto;
+      max-width: 50%;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      text-align: justify;
+      margin: 20px 0 10px;
+    }
+    .species {
+      font-style: italic;
+      font-weight: bold;
+    }
+    .more-info {
+      display: block;
+
+      color: #056b3d;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .more-info:hover {
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 30px 15px;
+      border: 1px solid #1b3a0b;
+      background: #58bc22;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 40px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #056b3d;
+      color: #deecdd;
+      border: whitesmoke;
+    }
+    .footer {
+      text-align: center;
+      margin: 20 px auto;
+      font-size: 20px;
+      color: #056b3d;
+      font-family: "Ephesis", cursive;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>Violets</h1>
+      <h2>True Violets</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/692/original/sweet_violets3.jpg?1658049094"
+        alt="Sweet Violets"
+      />
+      <p>
+        <strong>Violets</strong> are one of the cheeriest little flowers to
+        grace the landscape. Viola is a genus of flowering plants in the violet
+        family Violaceae. It is the largest genus in the family, containing
+        between 525 and 600 species. Most species are found in the temperate
+        Northern Hemisphere; however, some are also found in widely divergent
+        areas such as Hawaii, Australasia, and the Andes. True violets are
+        different from African violets which are natives of East Africa.<br />
+        <strong>True violets</strong> have been cultivated since at least 500
+        B.C. Their uses were more than ornamental, with flavoring and medicinal
+        applications high on the list. Today, we are fortunate to have a
+        plethora of different types of violets readily available at most
+        nurseries and garden centers. Violas encompass the
+        <span class="species">violets</span>,
+        <span class="species">pansies</span> and
+        <span class="species">sweet violets</span>, which are descended from
+        wild sweet violets from Europe.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Viola_(plant)"
+        target="_blank"
+        class="more-info"
+      >
+        <em>Read more on Wikipedia</em>
+      </a>
+      <button class="find-button">🌸Find your Violet</button>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/604/original/Dog_Violet.jpeg?1657959424"
+        alt="Dog Violet"
+        width="auto"
+        height="200"
+      />
+      <p class="footer">Built by Olena Terletska</p>
+      <script>
+        function find() {
+          let name = prompt("What is your name?");
+          let scent = prompt("Do you like a sweet scent? Yes/No");
+          scent = scent.toLowerCase();
+          if (scent === "yes") {
+            alert(`Hi, ${name}! Your violet is sweet violet ✨`);
+          } else {
+            alert(`Ok, ${name}, dog violets and pansies are better for you 👌`);
+          }
+        }
+        let = findButton = document.querySelector(".find-button");
+        findButton.addEventListener("click", find);
+      </script>
+    </div>
+  </body>
+</html>
